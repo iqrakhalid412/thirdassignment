@@ -77,39 +77,63 @@ import 'package:flutter/rendering.dart';
 //   }
 // }
 
-class home extends StatefulWidget {
-  const home({ Key? key }) : super(key: key);
+// class home extends StatefulWidget {
+//   const home({ Key? key }) : super(key: key);
+
+//   @override
+//   _homeState createState() => _homeState();
+// }
+
+// class _homeState extends State<home> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Column(
+//       children: [
+//         Container(
+//           color:Colors.tealAccent,
+//           height: 150,
+//           width:150,
+//           child: Center(
+            
+//             child: Text("Hello World",
+//             style:TextStyle(fontWeight:FontWeight.bold, fontSize: 40, color: Colors.amberAccent))
+//           ),
+//         ),
+//          Container(
+//           color:Colors.yellowAccent,
+//           height: 150,
+//           width:150,
+//           child: Center(
+            
+//             child: Text("Hello World",
+//             style:TextStyle(fontWeight:FontWeight.bold, fontSize: 40, color: Colors.amberAccent))
+//           ),
+//         ),
+//       ],
+//     );
+//   }
+// }
+
+
+class Home extends StatefulWidget {
+  const Home({ Key? key }) : super(key: key);
 
   @override
-  _homeState createState() => _homeState();
+  _HomeState createState() => _HomeState();
 }
 
-class _homeState extends State<home> {
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          color:Colors.tealAccent,
-          height: 150,
-          width:150,
-          child: Center(
-            
-            child: Text("Hello World",
-            style:TextStyle(fontWeight:FontWeight.bold, fontSize: 40, color: Colors.amberAccent))
-          ),
-        ),
-         Container(
-          color:Colors.yellowAccent,
-          height: 150,
-          width:150,
-          child: Center(
-            
-            child: Text("Hello World",
-            style:TextStyle(fontWeight:FontWeight.bold, fontSize: 40, color: Colors.amberAccent))
-          ),
-        ),
-      ],
+    return Scaffold(
+      body: Center(
+      child: CircleAvatar(
+        radius: 100,
+        // backgroundImage: NetworkImage('https://www.wallpapertip.com/wmimgs/61-615849_iqra-calligraphie.jpg'),
+        backgroundImage: AssetImage('assets/Iqra-designstyle-boots-m.png'),
+    
+      ),
+      ),
     );
   }
 }
