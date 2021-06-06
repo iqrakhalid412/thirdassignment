@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'app.dart';
+
+
+                     //////////=======Balloons=======///////////
+
 
 
 // class home extends StatefulWidget {
@@ -77,6 +82,16 @@ import 'package:flutter/material.dart';
 //   }
 // }
 
+
+
+
+
+
+                       /////======Something Different=====//////
+                       
+
+
+
 // class home extends StatefulWidget {
 //   const home({ Key? key }) : super(key: key);
 
@@ -139,6 +154,140 @@ import 'package:flutter/material.dart';
 // }
 
 
+
+
+
+
+                     /////===========Multiple_Containers===========/////
+                     
+
+// class Home extends StatefulWidget {
+//   const Home({ Key? key }) : super(key: key);
+
+//   @override
+//   _HomeState createState() => _HomeState();
+// }
+
+// class _HomeState extends State<Home> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: Stack(children: [
+
+// Positioned(
+//             left: 60,
+//             top: 60,
+//             child: Container(color:Colors.blue , height:150, width: 150)),
+
+
+//         Positioned(
+//             left: 30,
+//             top: 30,
+//             child: Container(color:Colors.black , height:150, width: 150)),
+
+
+
+
+
+//         Align(
+//           alignment: Alignment.topLeft,
+//           child: Container(color:Colors.yellowAccent , height:150, width: 150)),
+
+// Positioned(
+//             left: 230,
+//             top: 60,
+//             child: Container(color:Colors.purple , height:150, width: 150)),
+
+
+
+//            Positioned(
+//             left: 260,
+//             top: 30,
+//             child: Container(color:Colors.red , height:150, width: 150)),
+
+
+//           Align(
+//             alignment: Alignment.topRight,
+//             child: Container(color:Colors.greenAccent , height:150, width: 150)),
+
+
+// Positioned(
+//             left: 60,
+//             top: 400,
+//             child: Container(color:Colors.redAccent , height:150, width: 150)),
+
+//           Positioned(
+//             left: 30,
+//             top: 430,
+//             child: Container(color:Colors.lightGreenAccent , height:150, width: 150)),
+
+
+
+//           Align(
+//             alignment: Alignment.bottomLeft,
+//             child: Container(color:Colors.blueAccent , height:150, width: 150)),
+
+
+// Positioned(
+//             left: 230,
+//             top: 400,
+//             child: Container(color:Colors.black87 , height:150, width: 150)),
+
+//          Positioned(
+//             left: 260,
+//             top: 430,
+//             child: Container(color:Colors.pinkAccent , height:150, width: 150)),
+
+
+
+//           Align(alignment:Alignment.bottomRight,
+//           child: Container(color:Colors.teal , height:150, width: 150)),
+          
+//       ],
+//       ),
+//     );
+//   }
+// }
+
+
+
+
+
+//////====Media Query=======//////
+
+// class Home extends StatefulWidget {
+//   const Home({ Key? key }) : super(key: key);
+
+//   @override
+//   _HomeState createState() => _HomeState();
+// }
+
+// class _HomeState extends State<Home> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       color: Colors.purple,
+//       height: MediaQuery.of(context).size.height*0.5,
+//       width: MediaQuery.of(context).size.width*0.5,
+//     );
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+             ////////=======Button=======///////
+             
+
+
 class Home extends StatefulWidget {
   const Home({ Key? key }) : super(key: key);
 
@@ -150,79 +299,10 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(children: [
-
-Positioned(
-            left: 60,
-            top: 60,
-            child: Container(color:Colors.blue , height:150, width: 150)),
-
-
-        Positioned(
-            left: 30,
-            top: 30,
-            child: Container(color:Colors.black , height:150, width: 150)),
-
-
-
-
-
-        Align(
-          alignment: Alignment.topLeft,
-          child: Container(color:Colors.yellowAccent , height:150, width: 150)),
-
-Positioned(
-            left: 230,
-            top: 60,
-            child: Container(color:Colors.purple , height:150, width: 150)),
-
-
-
-           Positioned(
-            left: 260,
-            top: 30,
-            child: Container(color:Colors.red , height:150, width: 150)),
-
-
-          Align(
-            alignment: Alignment.topRight,
-            child: Container(color:Colors.greenAccent , height:150, width: 150)),
-
-
-Positioned(
-            left: 60,
-            top: 400,
-            child: Container(color:Colors.redAccent , height:150, width: 150)),
-
-          Positioned(
-            left: 30,
-            top: 430,
-            child: Container(color:Colors.lightGreenAccent , height:150, width: 150)),
-
-
-
-          Align(
-            alignment: Alignment.bottomLeft,
-            child: Container(color:Colors.blueAccent , height:150, width: 150)),
-
-
-Positioned(
-            left: 230,
-            top: 400,
-            child: Container(color:Colors.black87 , height:150, width: 150)),
-
-         Positioned(
-            left: 260,
-            top: 430,
-            child: Container(color:Colors.pinkAccent , height:150, width: 150)),
-
-
-
-          Align(alignment:Alignment.bottomRight,
-          child: Container(color:Colors.teal , height:150, width: 150)),
-          
-      ],
-      ),
+      body:Container(child: Center(child: ElevatedButton(
+        onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>App()));
+        }, child: Text("Click Me"))))
     );
   }
 }
