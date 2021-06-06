@@ -288,21 +288,152 @@ import 'app.dart';
              
 
 
-class Home extends StatefulWidget {
-  const Home({ Key? key }) : super(key: key);
+// class Home extends StatefulWidget {
+//   const Home({ Key? key }) : super(key: key);
 
-  @override
-  _HomeState createState() => _HomeState();
-}
+//   @override
+//   _HomeState createState() => _HomeState();
+// }
 
-class _HomeState extends State<Home> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body:Container(child: Center(child: ElevatedButton(
-        onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>App()));
-        }, child: Text("Click Me"))))
-    );
-  }
-}
+// class _HomeState extends State<Home> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body:Container(child: Center(child: ElevatedButton(
+//         onPressed: (){
+//             Navigator.push(context, MaterialPageRoute(builder: (context)=>App()));
+//         }, child: Text("Click Me"))))
+//     );
+//   }
+// }
+
+
+
+
+               //////======List__Tile=====/////
+               ///
+              class Home extends StatefulWidget {
+                const Home({ Key? key }) : super(key: key);
+              
+                @override
+                _HomeState createState() => _HomeState();
+              }
+              
+              class _HomeState extends State<Home> {
+                @override
+                Widget build(BuildContext context) {
+                  return Scaffold(
+                    body : Column(
+                      children:[
+                        ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage('https://www.unigreet.com/wp-content/uploads/2020/12/smiley-dp.jpg'),
+                            radius: 30,
+                          ),
+                          title: Text("Iqra Khalid"),
+                          subtitle: Text("Hye whats going on"),
+                          trailing: Column(children: [
+                            Text("4:45"),
+                            CircleAvatar(backgroundColor: Colors.red,radius: 10,)
+                          ],),
+                        ),
+
+
+                         ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage('https://www.unigreet.com/wp-content/uploads/2020/12/whatsapp-dp-sad-boy.jpg'),
+                            radius: 30,
+                          ),
+                          title: Text("Kinza Shafaq"),
+                          subtitle: Text("Hello, What are you doing?"),
+                          trailing: Column(children: [
+                            Text("7:00"),
+                            CircleAvatar(backgroundColor: Colors.blue,radius: 10,)
+                          ],),
+                        ),
+
+
+                         ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage('https://toptrendpk.com/wp-content/uploads/2020/08/best-whatsapp-wallpaper-15.jpg'),
+                            radius: 30,
+                          ),
+                          title: Text("Rubab"),
+                          subtitle: Text("Dude!Listen"),
+                          trailing: Column(children: [
+                            Text("1:00"),
+                            CircleAvatar(backgroundColor: Colors.green,radius: 10,)
+                          ],),
+                        ),
+
+
+
+                         ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage('https://www.unigreet.com/wp-content/uploads/2021/03/dp_pic-1024x1016.jpg'),
+                            radius: 30,
+                          ),
+                          title: Text("Rida Fatima"),
+                          subtitle: Text("HIi.., Whats going on"),
+                          trailing: Column(children: [
+                            Text("2:35"),
+                            CircleAvatar(backgroundColor: Colors.pinkAccent,radius: 10,)
+                          ],),
+                        ),
+
+
+
+
+                            ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage('http://www.goodmorningimageshddownload.com/wp-content/uploads/2020/03/Cute-Whatsapp-DP-11.jpg'),
+                            radius: 30,
+                          ),
+                          title: Text("Ashhad"),
+                          subtitle: Text("Salam,, Aapi"),
+                          trailing: Column(children: [
+                            Text("5:34"),
+                            CircleAvatar(backgroundColor: Colors.deepPurple,radius: 10,)
+                          ],),
+                        ),
+
+
+
+
+
+                         ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage('https://1.bp.blogspot.com/-myTgWCWsp5w/X4u-UOfa60I/AAAAAAAAgYI/cX4Dls5Hshkf5VH17rOxD_R8EJrjhq41ACLcBGAsYHQ/s1350/Sad%2BQuotes%2Bfor%2BWhatsapp%2BDp%2Band%2BStatus%2B%25284%2529.jpg'),
+                            radius: 30,
+                          ),
+                          title: Text("Esha"),
+                          subtitle: Text("Assalam o Alaikum"),
+                          trailing: Column(children: [
+                            Text("10:22"),
+                            CircleAvatar(backgroundColor: Colors.yellowAccent,radius: 10,)
+                          ],),
+                        ),
+
+
+
+
+
+
+                         ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage('https://bestwhatsappdps.com/wp-content/uploads/2021/02/Sad-Emoji-WhatsApp-Dp-1.jpg'),
+                            radius: 30,
+                          ),
+                          title: Text("Hurain"),
+                          subtitle: Text("Salam....!"),
+                          trailing: Column(children: [
+                            Text("12:00"),
+                            CircleAvatar(backgroundColor: Colors.black,radius: 10,)
+                          ],),
+                        )
+                      ]
+
+                    )
+                  );
+                }
+              }
